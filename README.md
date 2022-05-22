@@ -12,5 +12,22 @@ Gradually designing the perfect general purpose programming lanuage
 - interface to existing stuff: <br>
     We dont want to code everything for a std lib manually (for example be bale to call java classes if we run it on jvm)
 - good compiler/error message experience
-- self hosted, apart from the vm (obviously)
+- self hosted compiler
 - typesafe (please. please. please.)
+
+### Compiler
+- Compiled to bytecode/machinecode/... not interpreted please
+- be able to print out the AST / tokens / any intermediate form at any step to console/file
+- make parts (like tokenizer) as modular and usable in other contexts as possible, so people can just use that and dont need to do it themselves
+- suggestions mode: give hints on what coudl eb the solution to the current problem
+- interactive mode: like suggestions mode, but on error the compiler guides you through a multiple choice dialog (command line), tutorial-style, option to print the docs for a problem on demand, etc, make the amount of information variable
+
+### REPL and stuff
+- only if it's possible to code that without having to implement an interpreter additionally to the compiler
+- stuff like python's exec() and eval(), but safe (note buttet point 3 under Compiler)
+
+### Syntax etc:
+- curly braces, java style (c# style looks a bit better, but 1 extra line everytime u use it? nope!)
+- semicolons or not? idk? whatever is chosen, stick to it and make it mandatory (no optional ; *cough cough* js)
+- types: inferred if possible, var keyword (decide upon a best practice and stick to it, dont mix var-style with explicit type style, use the other one sparingly)
+- (suggestion, not final): {class: PascalCase, function: PascalCase, field_of_any_kind_seriously_c_sharp_i_hate_how_its_different_every_time: camelCase}
