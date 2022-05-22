@@ -10,7 +10,8 @@ make an issue, make a pr, explain your idea directly, anythign goes! You just ha
 ### Examples
 You can also write "sample code", if so make it clear (with comments or by putting it into a folder with md file) which syntax options you chose. <br>
 Try to copy and adapt the existing examples from other styles to show the similarites/differences in a side by side comparison. <br>
-File ending is .pli (dotProgrammingLanguageIdeas) until we have a real one
+File ending is .pli (dotProgrammingLanguageIdeas) until we have a real one. <br>
+if possible add some sort of versioning number in a comment of the file at the top (unless its a real language) so we know which "design iteration" youre from and whether it needs to be updated or not.
 
 - README.md
 - Examples
