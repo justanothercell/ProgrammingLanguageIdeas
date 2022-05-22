@@ -1,6 +1,6 @@
 # ProgrammingLanguageIdeas
 
-Gradually designing the perfect general purpose programming lanuage
+Gradually designing the perfect general purpose programming lanuage. No guarantee that that is all even possible with a compiled language, im just tossing stuff around
 
 ### What Should Be Noted And Is Probably Best:
 - the less special cases the better: <br>
@@ -31,3 +31,9 @@ Gradually designing the perfect general purpose programming lanuage
 - semicolons or not? idk? whatever is chosen, stick to it and make it mandatory (no optional ; *cough cough* js)
 - types: inferred if possible, var keyword (decide upon a best practice and stick to it, dont mix var-style with explicit type style, use the other one sparingly)
 - (suggestion, not final): {class: PascalCase, function: PascalCase, field_of_any_kind_seriously_c_sharp_i_hate_how_its_different_every_time: camelCase}
+- types: python seems cool but idk how well it fits, probably the normal style...
+- return types: both java and python stype have their pros and cons, i'd be with python, just because fun and seems more reusable :)
+- make classes and funcs be passed around as arguments just by writing them without the braces (like python)
+- no new keyword *hard decicion, but seems the right thing to do, no final decicion*
+- annotations: much talk is needed, because annotations work differently everywhere
+- generics: some sort of generic "This" to reference the "current class", for singletons etc. are generics even needed when u can pass classes as arguments? is that compatible?
