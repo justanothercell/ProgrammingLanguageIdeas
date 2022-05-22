@@ -1,9 +1,27 @@
 # ProgrammingLanguageIdeas
 
-Gradually designing the perfect general purpose programming lanuage. No guarantee that that is all even possible with a compiled language, im just tossing stuff around
+Gradually designing the perfect general purpose programming lanuage. <br>
+No guarantee that that is all even possible with a compiled language, im just tossing stuff around. <br>
+THe first version of this was just written with the browser github editor onto the main branch, so, yes very professionally done and totally not unstructured
 
 ### Contributing:
-make an issue, make a pr, explain your idea directly, anythign goes! You just have to convince me that your idea is an improvement and ill either add it or add it as an alternative option. You can also write "sample code", if so make it clear (with comments or by putting it into a folder with md file) which syntax options you chose.
+make an issue, make a pr, explain your idea directly, anythign goes! You just have to convince me that your idea is an improvement and ill either add it or add it as an alternative option.
+
+### Examples
+You can also write "sample code", if so make it clear (with comments or by putting it into a folder with md file) which syntax options you chose. <br>
+Try to copy and adapt the existing examples from other styles to show the similarites/differences in a side by side comparison. <br>
+File ending is .pli (dotProgrammingLanguageIdeas) until we have a real one
+
+- README.md
+- Examples
+    - SyntaxOptionA
+        - syntax.md
+        - exampleA.pli
+        - exampleB.pli
+    - SyntaxOptionB
+        - syntax.md
+        - exampleA.pli
+        - exampleB.pli 
 
 ### What Should Be Noted And Is Probably Best:
 - the less special cases the better: <br>
@@ -20,7 +38,7 @@ make an issue, make a pr, explain your idea directly, anythign goes! You just ha
 
 ### Compiler
 - Compiled to bytecode/machinecode/... not interpreted please
-- be able to print out the AST / tokens / any intermediate form at any step to console/file
+- be able to print out the AST / tokens / any intermediate form at any step to console/file. if possible, also make loading from these steps from file possible
 - make parts (like tokenizer) as modular and usable in other contexts as possible, so people can just use that and dont need to do it themselves
 - suggestions mode: give hints on what coudl eb the solution to the current problem
 - interactive mode: like suggestions mode, but on error the compiler guides you through a multiple choice dialog (command line), tutorial-style, option to print the docs for a problem on demand, etc, make the amount of information variable
@@ -39,4 +57,4 @@ make an issue, make a pr, explain your idea directly, anythign goes! You just ha
 - make classes and funcs be passed around as arguments just by writing them without the braces (like python)
 - no new keyword *hard decicion, but seems the right thing to do, no final decicion*
 - annotations: much talk is needed, because annotations work differently everywhere
-- generics: some sort of generic "This" to reference the "current class", for singletons etc. are generics even needed when u can pass classes as arguments? is that compatible?
+- generics: some sort of generic "This" to reference the "current class", for singletons/builders etc. are generics even needed when u can pass classes as arguments? is that compatible?
