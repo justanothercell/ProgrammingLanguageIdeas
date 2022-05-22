@@ -2,6 +2,9 @@
 
 Gradually designing the perfect general purpose programming lanuage. No guarantee that that is all even possible with a compiled language, im just tossing stuff around
 
+### Contributing:
+make an issue, make a pr, explain your idea directly, anythign goes! You just have to convince me that your idea is an improvement and ill either add it or add it as an alternative option. You can also write "sample code", if so make it clear (with comments or by putting it into a folder with md file) which syntax options you chose.
+
 ### What Should Be Noted And Is Probably Best:
 - the less special cases the better: <br>
     syntactic sugar should be able to be converted to a "lower-level" form and not be a black-box-compiler-special-case.
