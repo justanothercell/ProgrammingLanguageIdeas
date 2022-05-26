@@ -7,23 +7,6 @@ THe first version of this was just written with the browser github editor onto t
 ### Contributing:
 make an issue, make a pr, explain your idea directly, anythign goes! You just have to convince me that your idea is an improvement and ill either add it or add it as an alternative option.
 
-### Examples
-You can also write "sample code", if so make it clear (with comments or by putting it into a folder with md file) which syntax options you chose. <br>
-Try to copy and adapt the existing examples from other styles to show the similarites/differences in a side by side comparison. <br>
-File ending is .pli (dotProgrammingLanguageIdeas) until we have a real one. <br>
-if possible add some sort of versioning number in a comment of the file at the top (unless its a real language) so we know which "design iteration" youre from and whether it needs to be updated or not.
-
-- README.md
-- Examples
-    - SyntaxOptionA
-        - syntax.md
-        - exampleA.pli
-        - exampleB.pli
-    - SyntaxOptionB
-        - syntax.md
-        - exampleA.pli
-        - exampleB.pli 
-
 ### What Should Be Noted And Is Probably Best:
 - the less special cases the better: <br>
     syntactic sugar should be able to be converted to a "lower-level" form and not be a black-box-compiler-special-case.
