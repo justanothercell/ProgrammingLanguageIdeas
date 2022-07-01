@@ -35,7 +35,7 @@ v is now a local variable in this new scope. variables from outer scope usable.
 int x = 8;
 int y;
 {
-  int v = sqrt(x);
+  v: int = sqrt(x);
   y = x*x+v;
 };
 println(y);
@@ -55,7 +55,7 @@ println(y);
 ```c#
 int x = 8;
 println(int {
-  int v = sqrt(x);
+  v: int = sqrt(x);
   return x*x+v;
 }());
 ```
@@ -64,7 +64,7 @@ println(int {
 ```c#
 x: int = 8;
 y: int = in: int -> int {
-  int v = sqrt(x);
+  v: int = sqrt(x);
   return x*x+v;
 }(x);
 println(y);
@@ -79,7 +79,7 @@ As you can see, this is not much work at all.
 int x = 8;
 int y;
 calc: func = {
-  int v = sqrt(x);
+  v: int = sqrt(x);
   y = x*x+v;
 }
 calc();
@@ -90,7 +90,7 @@ println(y);
 ```c#
 int x = 8;
 calc: func = int {
-  int v = sqrt(x);
+  v: int = sqrt(x);
   return x*x+v;
 }
 int y = calc();
@@ -101,7 +101,7 @@ println(y);
 ```c#
 x: int = 8;
 calc: func = in: int -> int {
-  int v = sqrt(x);
+  v: int = sqrt(x);
   return x*x+v;
 }
 inty y = calc(x);
@@ -110,7 +110,7 @@ println(y);
 // super explicit typing:
 x: int = 8;
 calc: func > int -> int = in: int -> int {
-  int v = sqrt(x);
+  v: int = sqrt(x);
   return x*x+v;
 }
 inty y = calc(x);
