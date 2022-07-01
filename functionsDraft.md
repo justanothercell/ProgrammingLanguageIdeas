@@ -140,6 +140,18 @@ result.ok(){
   print(result.whatever());
 }
 ```
+###### "not if" implementation
+```c#
+notif = check: bool, function: func, elseFunc: func = null {
+  if(!check) {
+    func();
+    return;
+  }
+  else{
+    if(elseFunc != null) elseFunc();
+  }
+}
+```
 ###### Second approach using inline functions
 ```c#
 HTTP.get("url", HTTPResult result -> {
