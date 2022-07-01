@@ -45,7 +45,7 @@ println(y);
 ```c#
 int x = 8;
 int y = int {
-  int v = sqrt(x);
+  v: int = sqrt(x);
   return x*x+v;
 };
 println(y);
