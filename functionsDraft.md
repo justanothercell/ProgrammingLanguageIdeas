@@ -140,6 +140,28 @@ result.ok(){
   print(result.whatever());
 }
 ```
+
+###### Second approach using inline functions
+```c#
+HTTP.get("url", HTTPResult result -> {
+  print(result.whatever());
+});
+```
+###### Second approach using syntactic sugar to do exactly the same as the above
+```c#
+HTTP.get("url") HTTPResult result -> {
+  print(result.whatever());
+}
+```
+
+###### Implementation of HTTP.get() for the two above
+```c#
+get: func = url: String, onSuccess: func > HTTPResult {
+  res: HTTPResult = doSomeQueriesAndOtherStuff(url, stuff, importantParam, theObligatoryConstant);
+  if(res.returnCode() == 200) onSuccess();
+}
+```
+
 ###### "not if" implementation
 ```c#
 notif = check: bool, function: func, elseFunc: func = null {
@@ -166,23 +188,4 @@ notif(5 > 7, {
 }, {
   println("i was right);
 });
-```
-###### Second approach using inline functions
-```c#
-HTTP.get("url", HTTPResult result -> {
-  print(result.whatever());
-});
-```
-###### Second approach using syntactic sugar to do exactly the same as the above
-```c#
-HTTP.get("url") HTTPResult result -> {
-  print(result.whatever());
-}
-```
-####### Implementation of HTTP.get() for thr ttwo above
-```c#
-get: func = url: String, onSuccess: func > HTTPResult {
-  res: HTTPResult = doSomeQueriesAndOtherStuff(url, stuff, importantParam, theObligatoryConstant);
-  if(res.returnCode() == 200) onSuccess();
-}
 ```
