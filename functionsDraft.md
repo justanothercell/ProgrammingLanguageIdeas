@@ -151,6 +151,21 @@ notif = check: bool, function: func, elseFunc: func = null {
     if(elseFunc != null) elseFunc();
   }
 }
+
+// usage
+notif(5 > 7) {
+  println("i was wrong");
+}
+else{
+  println("i was right);
+}
+
+// equivalent to
+notif(5 > 7, {
+  println("i was wrong")
+}, {
+  println("i was right);
+});
 ```
 ###### Second approach using inline functions
 ```c#
