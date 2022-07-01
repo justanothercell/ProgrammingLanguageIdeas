@@ -164,13 +164,14 @@ get: func = url: String, onSuccess: func > HTTPResult {
 
 ###### "not if" implementation
 ```c#
-notif = check: bool, function: func, elseFunc: func = null {
+notif = check: bool, function: func, elseFunc: func? { // ? => can be null
   if(!check) {
     func();
     return;
   }
   else{
     if(elseFunc != null) elseFunc();
+    // or: elseFunc?();
   }
 }
 
