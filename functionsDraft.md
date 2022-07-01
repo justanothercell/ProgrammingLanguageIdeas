@@ -135,7 +135,7 @@ result.ok({
 ```
 ###### Using syntactic sugar to do exactly the same as the above
 ```c#
-Optional<HTTPResult> result = HTTP.get("url");
+result: Optional<HTTPResult> = HTTP.get("url");
 result.ok(){
   print(result.whatever());
 }
@@ -143,13 +143,13 @@ result.ok(){
 
 ###### Second approach using inline functions
 ```c#
-HTTP.get("url", HTTPResult result -> {
+HTTP.get("url", result: HTTPResult -> {
   print(result.whatever());
 });
 ```
 ###### Second approach using syntactic sugar to do exactly the same as the above
 ```c#
-HTTP.get("url") HTTPResult result -> {
+HTTP.get("url") result: HTTPResult -> {
   print(result.whatever());
 }
 ```
