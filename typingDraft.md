@@ -49,3 +49,22 @@ myFunc2 := a: int, b: int, printer: func<object -> string> -> Optional<int> { ..
 
 result: Optional<int> = myFunc(1, 2, println);
 ```
+### classes
+```c#
+Player: class = Entity {
+  health: int = 10;
+  position: Vector2f = Vector2f(0, 0);
+  
+  update := delta: float {
+    ...
+  }
+}
+
+Optional: class<T> = {
+  obj: T = null; // allow nullables? debate for another day...
+  
+  __init__ := obj: T {
+    this.obj = obj;
+  }
+}
+```
